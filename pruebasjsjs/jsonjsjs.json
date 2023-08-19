@@ -1,0 +1,12 @@
+{
+    "pedidos en ruta":[
+        {
+            "rutaXl":"./Numero_mensaje_whatsapp.xlsx",
+            "msj":"hola @Nombre, ",
+            "recurso":"",
+            "variables":"diccionario",
+            "colNum":1,
+            "NomCli":2
+        }
+    ]
+}
