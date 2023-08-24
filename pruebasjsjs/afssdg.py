@@ -22,6 +22,8 @@ lst = [(1,'Raj'),
        (3,'Vaishnavi'),
        (4,'Rachna'),
        (5,'Shubham')]
+
+var = 'xD'
   
 # find total number of rows and
 # columns in list
@@ -32,6 +34,8 @@ root = Tk()
 t = Table(root)
 varPrueba = IntVar()
 otravar=IntVar()
+otraotravar = StringVar()
+otraotravar.set(var)
 radiob = CTk.CTkRadioButton(root, variable=otravar, value=1)
 radiob.grid(column=2, row=5)
 
@@ -40,5 +44,8 @@ radiob2.grid(column=2, row=6)
 
 radiob3 = CTk.CTkRadioButton(root, variable=otravar, value=3)
 radiob3.grid(column=2, row=7)
+
+el_entry = CTk.CTkEntry(root, textvariable=otraotravar, text_color='black')
+el_entry.grid(column=2, row=8)
 
 root.mainloop()

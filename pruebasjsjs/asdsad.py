@@ -16,17 +16,15 @@ class MyApp:
         self.root = root
         self.root.title("Radio Buttons Example")
         self.root.geometry("800x800")
+        self.root.configure(fg_color='#ffff99')
+
+        self.bbb = CTk.CTkLabel(self.root, text='xDxD', fg_color='green', width=1)
+        self.bbb.place(relx=0.5, rely=0.5, anchor="center")
 
         '''self.print_button = tk.Button(root, text="Imprimir selección", command=self.print_selection)
         self.print_button.pack()'''
-        self.FFFF = CTk.CTkFrame(self.root, fg_color='gray')
-        self.FFFF.pack(fill='both', expand=True)
-
-        self.bbb = CTk.CTkLabel(self.FFFF, text='xDxD', fg_color='green', width=1)
-        self.bbb.pack(side='left', expand=True)
-
-        self.bbb1 = CTk.CTkLabel(self.FFFF, text='xDxD2', fg_color='red', width=200)
-        self.bbb1.pack(side='right', fill='both', expand=True)
+        self.FFFF = CTk.CTkFrame(self.root, fg_color='transparent', border_color='white', border_width=2)
+        self.FFFF.pack(fill='both', expand=True, padx=10, pady=10)
 
     def print_selection(self):
 
@@ -38,6 +36,6 @@ class MyApp:
         self.group4 = RadioButtonGroup(root, "Opción 4", 4, self.shared_var, 'right')
 
 if __name__ == "__main__":
-    root = tk.Tk()
+    root = CTk.CTk()
     app = MyApp(root)
     root.mainloop()
